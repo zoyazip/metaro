@@ -1,0 +1,182 @@
+.navigationContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 998;
+    background-color: #fff;
+
+}
+
+.navigationBottomFullsize {
+    width: 100%;
+    background-color: #F4F9F9;
+    display: flex;
+    justify-content: center;
+}
+
+.navigationTop {
+    max-width: 1230px;
+    width: 90vw;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+}
+
+.navigationBottom {
+    max-width: 1230px;
+    width: 90vw;
+    height: 100px;
+    background-color: #F4F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigationSocialIcons {
+    width: 100px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigationContacts {
+    display: flex;
+}
+
+.navigationPhone {
+    display: flex;
+    align-items: center;
+}
+
+.navigationMail {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.navigationContactLink {
+    margin-left: 10px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigationLanguages {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+}
+
+.navigationLinks {
+    width: 60%;
+    max-width: 720px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigationContactUsBtn {
+    position: relative;
+    z-index: 1000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactUsBtn {
+    background-color: #1D827E;
+    padding: 13px 30px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.NavigationBurgerMenuIcon {
+    display: none;
+}
+
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 1022px) {
+
+    .visible {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+        box-shadow: -3px 23px 20px #00000019;
+    }
+
+    .hidden {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .NavigationBurgerMenuIcon {
+        display: block;
+    }
+
+    .navigationTop {
+        position: absolute;
+        top: 100px;
+        height: 200px;
+        padding: 20px 0px;
+        width: 95vw;
+        max-width: 400px;
+        right: 0px;
+        background-color: white;
+        z-index: 1000;
+        flex-direction: column;
+        
+    }
+
+    .navigationContacts {
+        flex-direction: column;
+    }
+
+    .navigationLinks {
+        position: absolute;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 95vw;
+        height: 380px;
+        max-width: 400px;
+        top: 300px;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .navigationLinks a {
+        padding: 10px 0px;
+    }
+
+    .navigationContactUsBtn {
+        position: absolute;
+        z-index: 1000;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+        max-width: 400px;
+        top: 569px;
+        right: 0;
+    }
+
+    .contactUsBtn {
+        padding: 13px 100px;
+    }
+
+    .navigationMail {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        padding-top: 15px;
+    }
+
+}

@@ -1,0 +1,26 @@
+.footerContainer {
+    width: 100vw;
+    background-color: #1D827E;
+    display: flex;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer {
+    width: 90vw;
+    max-width: 1230px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer a {
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .footerContainer {
+        height: 8vh;
+    }
+}
