@@ -6,11 +6,13 @@ import styles from './page.module.css'
 import { useState } from 'react'
 // import 'normalize.css/normalize.css'
 
-import eng from "./globalComponents/languages/eng"
+import lv from "./globalComponents/languages/lv"
 
 
 export default function Home() {
-  const [language, setLanguage] = useState(eng)
+
+  
+  const [language, setLanguage] = useState(lv)
 
   const handleLanguageChange = (languageChange: LanguageType) => {
     setLanguage(languageChange)

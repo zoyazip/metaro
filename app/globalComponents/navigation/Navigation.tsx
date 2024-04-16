@@ -78,8 +78,8 @@ const Navigation = ({click, language}: NavigationProps) => {
                     <div className={`navigationLinks ${displayMenu}`}>
                         <a onClick={() => {scrollToAnchor("home")}}>{language.home}</a>
                         <a onClick={() => {scrollToAnchor("about")}}>{language.about}</a>
-                        <a onClick={() => {scrollToAnchor("services")}}>{language.services}</a>
                         <a onClick={() => {scrollToAnchor("certifications")}}>{language.certifications}</a>
+                        <a onClick={() => {scrollToAnchor("services")}}>{language.services}</a>
                         <a onClick={() => {scrollToAnchor("gallery")}}>{language.gallery}</a>
                         <a onClick={() => {scrollToAnchor("vacancies")}}>{language.vacancies}</a>
                     </div>
